@@ -33,14 +33,14 @@ function clickListener() {
     ) {
         errorText.innerText =
             "Please fill all sections with positive numerical values";
-    } else if (inputInitialPrice == inputFinalPrice) {
-        outputText.innerText =
-            "Your profit/loss = 0 & percent profit/loss = 0%";
     } else if (inputNoOfStocks === 0) {
         errorText.innerText =
             "Please fill non-zero positive numerical values only!";
         outputText.innerText =
             "Note: Number of stocks bought = 0, implies you bought no stocks, so no profit no loss";
+    } else if (inputInitialPrice == inputFinalPrice) {
+        outputText.innerText =
+            "Your initial purchase price is same as current price, so no profit no loss";
     } else if (inputInitialPrice === 0) {
         errorText.innerText =
             "Please fill non-zero positive numerical values only!";
