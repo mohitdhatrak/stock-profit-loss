@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Stock profit & loss calculator</title>
+        <link rel="stylesheet" href="/styles.css" />
+    </head>
+    <body>
+        <header class="header-container">
+            <h1>Stock profit and loss calculator</h1>
+        </header>
+
+        <h2 class="note-line">
+            Note: Put initial-purchase and current amount of stock in same
+            currency unit, final profit or loss will also have the same unit.
+        </h2>
+
+        <h3 class="input-headings">Initial purchase price of 1 stock:</h3>
+        <input
+            class="input-box"
+            type="number"
+            id="input-buy-price"
+            placeholder="Enter initial price of stock here"
+        />
+
+        <h3 class="input-headings">Quantity of stocks bought:</h3>
+        <input
+            class="input-box"
+            type="number"
+            id="input-quantity"
+            placeholder="Enter no. of stocks bought here"
+        />
+
+        <h3 class="input-headings">Current price of 1 stock:</h3>
+        <input
+            class="input-box"
+            type="number"
+            id="input-current-price"
+            placeholder="Enter current price of stock here"
+        />
+
+        <div id="error-message"></div>
+
+        <div id="output-message"></div>
+
+        <button id="button">Check now !</button>
+
+        <footer class="footer-container">
+            <h2>Connect with me</h2>
+            <div>
+                <a href="https://twitter.com/mohitdhatrak" target="_blank"
+                    ><img src="/twitter.svg" alt="" class="small-image-size"
+                /></a>
+                <a
+                    href="https://www.linkedin.com/in/mohitdhatrak/"
+                    target="_blank"
+                    ><img src="/linkedin.svg" alt="" class="small-image-size"
+                /></a>
+                <a href="https://github.com/mohitdhatrak" target="_blank"
+                    ><img src="/github.svg" alt="" class="small-image-size"
+                /></a>
+            </div>
+        </footer>
+
+        <script src="/app.js"></script>
+    </body>
+</html>
